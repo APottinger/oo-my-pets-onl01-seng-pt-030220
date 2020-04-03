@@ -12,6 +12,7 @@ class Cat
   def initialize(name, owner = nil)
     @name = name 
     @owner = owner 
+    pets[:cats] << self 
     @mood = "nervous"
     save
   end 
