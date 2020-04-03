@@ -29,14 +29,13 @@ class Owner
   end 
   
   def cats 
-    pets.select do |cats|
-    end 
+    @pets[:cats]
+  
   
   end 
   
   def dogs 
-    pets.select do |dogs|
-    end 
+    @pets[:dogs]
   end 
   
   def buy_cat(cat)
