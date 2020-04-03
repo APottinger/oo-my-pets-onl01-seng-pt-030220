@@ -28,11 +28,11 @@ class Owner
   end 
   
   def cats 
-    self.pets.select |cats|
+    pets.select |cats|
   end 
   
   def cats 
-    self.pets.select |cats|
+    pets.select |cats|
   end 
   
 end 
