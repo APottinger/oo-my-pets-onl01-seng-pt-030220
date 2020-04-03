@@ -11,9 +11,11 @@ class Owner
   end 
   
   attr_reader :name, :species
+  attr_accessor :pets
   
   def initialize(species = human)
     @name, @species = name, species
+    @pets = {:dogs => [], :cats => []}
     save
   end 
   
@@ -23,6 +25,10 @@ class Owner
   
   def say_species(species)
     "Hi, I am a #{species}!"
+  end 
+  
+  def cats 
+    self.pets.select |cats|
   end 
   
 end 
