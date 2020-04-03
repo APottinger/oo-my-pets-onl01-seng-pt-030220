@@ -40,12 +40,12 @@ class Owner
   end 
   
   def buy_cat(cat)
-    pets{:cats} << cat 
+    pets[:cats] << cat 
     cat.owner = self
   end 
   
   def buy_dog(dog)
-    pets{:dogs} << dog
+    pets[:dogs] << dog
     dog.owner = self
   end 
   
@@ -56,7 +56,7 @@ class Owner
   end 
   
   def feed_cats
-    pets{:cats}.each do |cat|
+    pets[:cats].each do |cat|
       @mood = "happy"
     end 
   end 
