@@ -73,9 +73,7 @@ class Owner
   end 
   
   def list_pets 
-    self.pets.each do |pt, pa|
-
-    end 
+    "I have #{dogs.count} dogs and #{cats.count} cats."
   end 
 end 
   
