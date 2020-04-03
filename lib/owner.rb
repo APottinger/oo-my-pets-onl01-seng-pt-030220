@@ -60,7 +60,16 @@ class Owner
     cats.each do |cat|
       cat.mood = "happy"
     end 
-  end
+  end 
+    
+  def sell_pets
+    self.pets.each do |pt, pa|
+      pa.each do |pet|
+        pet.mood = "nervous"
+      end 
+      pa.clear
+    end 
+  end 
 end 
   
   
