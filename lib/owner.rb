@@ -10,6 +10,11 @@ class Owner
     @@all.clear 
   end 
   
+  def self.count 
+    @@all.size 
+  end 
+  
+  
   attr_reader :name, :species
   attr_accessor :pets, :human
   
