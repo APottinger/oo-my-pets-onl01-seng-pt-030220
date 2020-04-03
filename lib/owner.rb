@@ -39,12 +39,12 @@ class Owner
   end 
   
   def buy_cat(cat)
-    pets[:cats] << cat 
+    cats << cat
     cat.owner = self
   end 
   
   def buy_dog(dog)
-    pets[:dogs] << dog
+    dogs << dog
     dog.owner = self
   end 
   
