@@ -76,6 +76,7 @@ class Owner
     self.pets.each do |pt, pa|
 
     end 
+  end 
 end 
   
   
