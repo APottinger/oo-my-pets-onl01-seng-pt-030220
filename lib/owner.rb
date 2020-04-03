@@ -74,7 +74,7 @@ class Owner
   
   def list_pets 
     self.pets.each do |pt, pa|
-      "I have #{"
+
     end 
 end 
   
