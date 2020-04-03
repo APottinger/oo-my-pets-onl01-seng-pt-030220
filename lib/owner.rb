@@ -31,6 +31,10 @@ class Owner
     self.pets.select |cats|
   end 
   
+  def cats 
+    self.pets.select |cats|
+  end 
+  
 end 
 
 Owner.all.count
