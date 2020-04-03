@@ -29,7 +29,9 @@ class Owner
   end 
   
   def cats 
-    pets.select |cats|
+    pets.select do |cats|
+    end 
+  
   end 
   
   def dogs 
@@ -73,4 +75,3 @@ class Owner
   
 end 
 
-Owner.all.count
