@@ -12,9 +12,12 @@ class Cat
   def initialize(name, owner = nil)
     @name = name 
     @mood = "nervous"
+    save
   end 
   
   def save 
+    @@all << self 
+  end 
     
     
 end 
