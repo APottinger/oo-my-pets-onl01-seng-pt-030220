@@ -62,7 +62,12 @@ class Owner
       @mood = "nervous"
     end 
     arr.clear
-  end 
+  end
+  
+  def list_pets
+    pets.collect do |pets|
+    end 
+  end
     
   
 end 
