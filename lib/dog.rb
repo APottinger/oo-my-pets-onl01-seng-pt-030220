@@ -12,6 +12,7 @@ class Dog
   def initialize(name, owner = nil)
     @name = name
     @owner = owner
+    owner.dogs << self if owner 
     @mood = "nervous"
     save 
   end 
