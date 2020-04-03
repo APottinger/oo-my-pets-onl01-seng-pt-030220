@@ -15,7 +15,7 @@ class Owner
   
   def initialize(name)
     @name = name 
-    @species = human
+    @species = "human"
     @pets = {:dogs => [], :cats => []}
     save
   end 
@@ -24,7 +24,7 @@ class Owner
     @@all << self
   end 
   
-  def say_species(species)
+  def say_species
     "Hi, I am a #{species}!"
   end 
   
