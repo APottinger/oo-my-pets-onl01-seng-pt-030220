@@ -52,13 +52,13 @@ class Owner
   
   def walk_dogs
     dogs.each do |dog|
-      @mood = "happy"
+      dog.mood = "happy"
     end 
   end 
   
   def feed_cats
     cats.each do |cat|
-      @mood = "happy"
+      cat.mood = "happy"
     end 
   end
 end 
