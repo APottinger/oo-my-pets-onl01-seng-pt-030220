@@ -66,10 +66,16 @@ class Owner
     self.pets.each do |pt, pa|
       pa.each do |pet|
         pet.mood = "nervous"
+        pet.owner = nil
       end 
       pa.clear
     end 
   end 
+  
+  def list_pets 
+    self.pets.each do |pt, pa|
+      "I have #{"
+    end 
 end 
   
   
