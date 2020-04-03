@@ -11,6 +11,7 @@ class Dog
   
   def initialize(name, owner = nil)
     @name = name
+    @owner = owner
     @mood = "nervous"
     save 
   end 
