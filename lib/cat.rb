@@ -12,7 +12,7 @@ class Cat
   def initialize(name, owner = nil)
     @name = name 
     @owner = owner 
-    pets[:cats] << self 
+    owner.cats << self if owner 
     @mood = "nervous"
     save
   end 
