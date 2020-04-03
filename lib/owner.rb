@@ -28,15 +28,43 @@ class Owner
   end 
   
   def cats 
-    pets{:cats}.select |cats|
+    pets.select |cats|
   end 
   
   def dogs 
     pets.select |dogs|
   end 
   
-  def buy_cat 
+  def buy_cat(cat)
+    pets{:cats} << cat 
+    cat.owner = self
+  end 
+  
+  def buy_dog(dog)
+    pets{:dogs} << dog
+    dog.owner = self
+  end 
+  
+  def walk_dogs
+    pets{:dogs}.each do |dog|
+      @mood = "happy"
+    end 
+  end 
+  
+  def feed_cats
+    pets{:cats}.each do |cat|
+      @mood = "happy"
+    end 
+  end 
+  
+  def sell_pets
+    pets.each do |pet, arr|
+      @mood = "nervous"
+    end 
+    arr.clear
+  end 
     
+  
 end 
 
 Owner.all.count
