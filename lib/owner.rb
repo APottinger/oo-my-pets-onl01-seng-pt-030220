@@ -28,13 +28,15 @@ class Owner
   end 
   
   def cats 
-    pets.select |cats|
+    pets{:cats}.select |cats|
   end 
   
-  def cats 
-    pets.select |cats|
+  def dogs 
+    pets.select |dogs|
   end 
   
+  def buy_cat 
+    
 end 
 
 Owner.all.count
